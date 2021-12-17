@@ -1,0 +1,258 @@
+#app {
+    font-family: Inconsolata, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #f0f6fc;
+}
+
+body {
+	background: #0d1117;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.link-btn {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	border: 0;
+	border-radius: 0;
+	color: #1f6feb;
+}
+
+.auth-form {
+	padding: 25px 15px;
+	margin: 0px auto;
+    width: 100%;
+    max-width: 448px;
+    background: #30363d;
+    border-radius: 20px;
+}
+
+.auth-form > * {
+	margin: 10px;
+}
+
+.form-input {
+	width: 90%;
+	padding: 6px 12px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #f0f6fc;
+	background-color: #6e7681;
+	background-clip: padding-box;
+	border: 0px solid;
+	appearance: none;
+	border-radius: 0.5rem;
+	transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.form-input::placeholder {
+	color: #c9d1d9;
+}
+
+.form-input:focus {
+	color: #0d1117;
+	background-color: #f0f6fc;
+	outline: 0;
+}
+
+.form-input:focus::placeholder {
+	color: #484f58;
+}
+
+.submit-btn {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	border-radius: 8px;
+	padding: 13px 23px;
+	border: 0px;
+	transition: background 0.2s;
+	background: #c9d1d9;
+	color: #0d1117;
+}
+
+.submit-btn:hover {
+	background: #f0f6fc;
+}
+
+.create-todo-button {
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	border-radius: 8px;
+	padding: 13px 23px;
+	border: 0px;
+	transition: background 0.2s;
+	background: #c9d1d9;
+	color: #0d1117;
+}
+
+.create-todo-button:hover {
+	background: #f0f6fc;
+}
+
+.todo-items {
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+	max-width: 100%;
+}
+
+.todo-card {
+	background: #30363d;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin: 20px 20px;
+	padding: 15px;
+	border-radius: 1rem;
+}
+
+.todo-card-control {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.todo-card-checkbox {
+	width: 36px;
+	height: 36px;
+	margin: 5px;
+	outline: none;
+}
+
+.todo-card-title-wrapper {
+	margin: 5px;
+	max-width: 90%;
+	overflow-wrap: break-word;
+}
+
+.todo-card-title {
+	font-size: 1.1rem;
+	text-align: left;
+}
+
+.todo-card-delete-button {
+	width: 36px;
+	height: 36px;
+	margin: 5px;
+	font-weight: 900;
+	font-size: 1rem;
+	color: #f0f6fc;
+	background-color: #6e7681;
+	border: 3px solid #f0f6fc;
+	border-radius: 3px;
+	opacity: 0.6;
+	transition: opacity .15s ease-in-out;
+}
+.todo-card-delete-button:hover {
+	opacity: 1;
+}
+
+.page-container {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}
+
+.home-page {
+	width: 100%;
+	max-width: 100%;
+}
+
+.create-todo {
+	padding: 20px 0px;
+}
+
+.create-todo-input-div{
+	padding: 10px 0px 10px 0px;
+}
+
+.create-todo-input {
+	width: 90%;
+	padding: 6px 12px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #f0f6fc;
+	background-color: #6e7681;
+	background-clip: padding-box;
+	border: 0px solid;
+	appearance: none;
+	border-radius: 0.5rem;
+	transition: background-color .15s ease-in-out, color .15s ease-in-out;
+	
+}
+
+.create-todo-input::placeholder {
+	color: #c9d1d9;
+}
+
+.create-todo-input:focus {
+	color: #0d1117;
+	background-color: #f0f6fc;
+	outline: 0;
+}
+
+.create-todo-input:focus::placeholder {
+	color: #484f58;
+}
+
+.create-todo-button-div{
+	padding: 10px 0px 0px 0px;
+}
+
+.links {
+	display:flex;
+	flex-direction: row;
+}
+
+.nav-link {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-router-link {
+	font-size: 1.2rem;
+	margin: 0px 20px;
+	cursor: pointer;
+	appearance: none;
+	outline: none;
+	text-decoration: none;
+}
+
+.nav-router-link:visited {
+	color: inherit;
+}
+
+.router-link-exact-active {
+	text-decoration: underline;
+}
+
+.nav {
+	width: 100%;
+	padding: 10px;
+}
+
+.logout {
+	margin-left: auto;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	border: 0;
+	border-radius: 0;
+	color: #1f6feb;
+}
